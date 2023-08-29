@@ -1,4 +1,4 @@
 cc_binary(
-    name = "test_app",
+    name = "btc_app",
     srcs = ["main.c"],
 )

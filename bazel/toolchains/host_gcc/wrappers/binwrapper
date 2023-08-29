@@ -1,0 +1,7 @@
+#!/bin/bash --norc
+
+# tool_path command doesn't support @packages, therefore we have to replicate everything here via a symlink.
+
+THIS_NAME=$(basename "$0")
+
+exec "${HOST_TOOL_PATH:?not set}"/"${THIS_NAME}" "$@"
