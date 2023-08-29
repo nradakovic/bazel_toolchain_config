@@ -1,0 +1,3 @@
+build:custom --action_env=BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1
+build:custom --host_platform=//bazel/platforms:host_gcc
+build:custom --incompatible_enable_cc_toolchain_resolution
